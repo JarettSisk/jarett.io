@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./public/css/base.css">
   <link rel="stylesheet" href="./public/css/main.css">
+  <link rel="stylesheet" href="./public/css/sideNav.css">
   <title>Jarett.io</title>
 </head>
 <body>
@@ -16,11 +17,20 @@
     <div class="header">
       <img class="logo" src="./public/images/Site-logo.png" alt="logo">
       <nav>
-        <a href="/about" class="nav-link">1. About</a>
-        <a href="/experience" class="nav-link">2. Experience</a>
-        <a href="/contact" class="nav-link">3. Contact</a>
-        <button class="resume-link">Resume</button>
+        <a href="/about" class="nav-link link-hover-effects">1. About</a>
+        <a href="/experience" class="nav-link link-hover-effects">2. Experience</a>
+        <a href="/contact" class="nav-link link-hover-effects">3. Contact</a>
+        <button class="resume-link link-hover-effects">Resume</button>
       </nav>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn link-hover-effects" onclick="closeNav()">&times;</a>
+        <a href="#about-section" onclick="closeNav()" class="link-hover-effects">1. About</a>
+        <a href="#" onclick="closeNav()" class="link-hover-effects">2. Experience</a>
+        <a href="#" onclick="closeNav()" class="link-hover-effects">3. Contact</a>
+      </div>
+
+      <span class="sideNavButton link-hover-effects" style="font-size:30px;cursor:pointer;color: #04F1FE;" onclick="openNav()">&#9776;</span>
     </div>
 
     <div class="main">
@@ -29,11 +39,11 @@
         <h1>Jarett Sisk.</h1>
         <h2>I create things using code.</h2>
         <p>I started coding as a hobby back in 2015, and what started as a hobby slowly became a passion. Over the years I spent alot of time self-learning and in 2021 finally had the opportunity to join a coding bootcamp and graduated in 2022. I am currently seeking employment for a full-time role as an entry level software engineer.</p>
-        <button class="resume-link">View my Resume</button>
+        <button class="resume-link link-hover-effects">View my Resume</button>
 
       </section>
 
-      <section class="about-section">
+      <section class="about-section" id="about-section">
           <h3>1. About Me</h3>
           <div class="hr-div"></div>
  
@@ -44,7 +54,6 @@
         <p>Some of my other hobbies include Electronic Music Production, Gaming ocasionally, and spending quality time with friends and family</p>
 
         <p>Here are a few of the technologies I have been working with recently</p>
-        <!-- Add bullet list here! -->
         <div class="tech-stack-div">
           <ul>
             <li>JavaScript</li>
@@ -60,8 +69,8 @@
         
       </section>
 
-      <section class="experience-section">
-        <h3>2. Experience</h3>
+      <!-- <section class="experience-section">
+        <h3>2. My Experience</h3>
         <div class="hr-div"></div>
         <div class="project-card">
           <h4>project title</h4>
@@ -116,16 +125,25 @@
       </section>
     </div>
     <div class="footer">
-      <!-- links -->
       <ul class="social-links">
         <li>github icon</li>
         <li>linkedin icon</li>
         <li>youtube icon</li>
       </ul>
-      <!--  -->
       <p>Designed & Built by Jarett Sisk</p>
-    </div>
+    </div> -->
 
   </div>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
 </body>
 </html>

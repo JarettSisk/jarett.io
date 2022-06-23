@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -11,14 +15,14 @@ body {
 }
 
 h1 {
-  font-size: 5.5rem;
+  font-size: clamp(40px, 8vw, 80px);
   color: #04F1FE;
   margin: 0;
   line-height: 100%;
 }
 
 h2 {
-  font-size: 4.5rem;
+  font-size: clamp(30px, 8vw, 70px);
   color: #D8F749;
   margin: 20px 0;
   line-height: 100%;
@@ -36,6 +40,15 @@ p {
   font-weight: bold;
   margin: 20px 0;
   color: #D3D3D3;
+}
+
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #D3D3D3;
+  }
 }
 
 a {
