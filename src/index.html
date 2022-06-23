@@ -7,9 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <link rel="stylesheet" href="./public/css/base.css">
   <link rel="stylesheet" href="./public/css/main.css">
   <link rel="stylesheet" href="./public/css/sideNav.css">
+  <link rel="stylesheet" href="./public/css/header.css">
+  <link rel="stylesheet" href="./public/css/footer.css">
   <title>Jarett.io</title>
 </head>
 <body>
@@ -17,24 +20,24 @@
     <div class="header">
       <img class="logo" src="./public/images/Site-logo.png" alt="logo">
       <nav>
-        <a href="/about" class="nav-link link-hover-effects">1. About</a>
-        <a href="/experience" class="nav-link link-hover-effects">2. Experience</a>
-        <a href="/contact" class="nav-link link-hover-effects">3. Contact</a>
+        <a href="#about" class="nav-link link-hover-effects">1. About</a>
+        <a href="#experience" class="nav-link link-hover-effects">2. Experience</a>
+        <a href="#contact" class="nav-link link-hover-effects">3. Contact</a>
         <button class="resume-link link-hover-effects">Resume</button>
       </nav>
 
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn link-hover-effects" onclick="closeNav()">&times;</a>
-        <a href="#about-section" onclick="closeNav()" class="link-hover-effects">1. About</a>
-        <a href="#" onclick="closeNav()" class="link-hover-effects">2. Experience</a>
-        <a href="#" onclick="closeNav()" class="link-hover-effects">3. Contact</a>
+        <a href="#about" onclick="closeNav()" class="link-hover-effects">1. About</a>
+        <a href="#experience" onclick="closeNav()" class="link-hover-effects">2. Experience</a>
+        <a href="#contact" onclick="closeNav()" class="link-hover-effects">3. Contact</a>
       </div>
 
       <span class="sideNavButton link-hover-effects" style="font-size:30px;cursor:pointer;color: #04F1FE;" onclick="openNav()">&#9776;</span>
     </div>
 
     <div class="main">
-      <section class="intro-section">
+      <section class="intro">
         <p>Hello, my name is</p>
         <h1>Jarett Sisk.</h1>
         <h2>I create things using code.</h2>
@@ -43,7 +46,7 @@
 
       </section>
 
-      <section class="about-section" id="about-section">
+      <section class="about" id="about">
           <h3>1. About Me</h3>
           <div class="hr-div"></div>
  
@@ -69,69 +72,103 @@
         
       </section>
 
-      <!-- <section class="experience-section">
+       <section class="experience" id="experience">
         <h3>2. My Experience</h3>
         <div class="hr-div"></div>
-        <div class="project-card">
-          <h4>project title</h4>
-          <p>Short description</p>
-          <img src="360-photo-png" alt="360 photo project">
-          <div class="project-links">
-            <a href="">github icon</a>
-            <a href="">link to project</a>
+        <div class="projects">
+          <div class="project-card">
+            <h4>360-photo</h4>
+            <p>View 360 photos in your browser</p>
+              <div class="project-image-container">
+                <img src="./public/images/360-photo.png" alt="360 photo project">
+                <a href="https://jarett-sisk-360-photo.herokuapp.com/photo">
+                <div class="project-image-overlay"></div>
+                </a>
+              </div>
+            <div class="project-links">
+              <a href="https://jarett-sisk-360-photo.herokuapp.com/photo" ><i class="uil uil-link-alt link-hover-effects"></i></a>
+              <a href="https://github.com/JarettSisk/360-photo-app" ><i class="uil uil-github link-hover-effects link-hover-effects"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h4>Sprinboard Dark Theme</h4>
+            <p>A dark theme for my bootcamp's website</p>
+              <div class="project-image-container">
+                <img src="./public/images/springboard-dark-theme.png" alt="Springboard dark theme project">
+                <a href="https://chrome.google.com/webstore/detail/springboard-dark-theme-be/momeonbdhfiamhnpjmgdmnkommfdlfhh">
+                  <div class="project-image-overlay"></div>
+                </a>
+              </div>
+            <div class="project-links">
+              <a href="https://chrome.google.com/webstore/detail/springboard-dark-theme-be/momeonbdhfiamhnpjmgdmnkommfdlfhh" ><i class="uil uil-link-alt link-hover-effects"></i></a>
+              <a href="https://github.com/JarettSisk/Springboard-dark-theme-chrome-extension" ><i class="uil uil-github link-hover-effects link-hover-effects"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h4>Hangman</h4>
+            <p>A fun hangman game for the web</p>
+              <div class="project-image-container">
+                <img src="./public/images/hangman.png" alt="360 photo project">
+                <a href="https://zealous-bassi-e07d0d.netlify.app/">
+                  <div class="project-image-overlay"></div>
+                </a>
+              </div>
+            <div class="project-links">
+              <a href="https://zealous-bassi-e07d0d.netlify.app/" ><i class="uil uil-link-alt link-hover-effects"></i></a>
+              <a href="https://github.com/JarettSisk/hangman-game" ><i class="uil uil-github link-hover-effects link-hover-effects"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <h4>Playlister</h4>
+            <p>Create and share playlists for your event</p>
+              <div class="project-image-container">
+                <img src="./public/images/playlister.png" alt="360 photo project">
+                <a href="https://jarett-sisk-playlister-app.herokuapp.com/">
+                  <div class="project-image-overlay"></div>
+                </a>
+              </div>
+            <div class="project-links">
+              <a href="https://jarett-sisk-playlister-app.herokuapp.com/" ><i class="uil uil-link-alt link-hover-effects"></i></a>
+              <a href="https://github.com/JarettSisk/Playlister" ><i class="uil uil-github link-hover-effects link-hover-effects"></i></a>
+            </div>
           </div>
         </div>
-        <div class="project-card">
-          <h4>project title</h4>
-          <p>Short description</p>
-          <img src="360-photo-png" alt="360 photo project">
-          <div class="project-links">
-            <a href="">github icon</a>
-            <a href="">link to project</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <h4>project title</h4>
-          <p>Short description</p>
-          <img src="360-photo-png" alt="360 photo project">
-          <div class="project-links">
-            <a href="">github icon</a>
-            <a href="">link to project</a>
-          </div>
-        </div>
-        <div class="project-card">
-          <h4>project title</h4>
-          <p>Short description</p>
-          <img src="360-photo-png" alt="360 photo project">
-          <div class="project-links">
-            <a href="">github icon</a>
-            <a href="">link to project</a>
-          </div>
-        </div>
- 
       </section>
 
-      <section class="contact-section">
+      <section class="contact" id="contact">
         <h3>3. Contact Information</h3>
         <div class="hr-div"></div>
         <div class="faceCard">
-          <img src="img/face-example.png" ></a>
+          <img src="./public/images/jarett-photo.png" ></a>
           <div>
-            <h2 style="margin: 0px;">Jarett Sisk</h2>
+            <h2 class="faceCard-title" style="margin: 0px;">Jarett Sisk</h2>
             <p>816-269-4911.</p>
             <p>jarett.sisk@gmail.com</p>
           </div>
         </div>
       </section>
     </div>
+
     <div class="footer">
       <ul class="social-links">
-        <li>github icon</li>
-        <li>linkedin icon</li>
-        <li>youtube icon</li>
+        <li>
+          <a href="https://github.com/JarettSisk" >
+            <i class="uil uil-github link-hover-effects link-hover-effects"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jarett-sisk/" >
+            <i class="uil uil-linkedin link-hover-effects"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCU5w8NK6R8I5yTLmKVNXWkQ" >
+            <i class="uil uil-youtube link-hover-effects"></i>
+          </a>
+        </li>
       </ul>
       <p>Designed & Built by Jarett Sisk</p>
-    </div> -->
+    </div>
 
   </div>
 

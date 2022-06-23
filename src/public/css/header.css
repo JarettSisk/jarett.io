@@ -1,0 +1,62 @@
+.header {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 0 10px black;
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    text-align: center;
+  }
+}
+
+nav {
+  display: block;
+  max-width: 1200px;
+  justify-self: end;
+  margin-right: 80px;
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+}
+
+nav > a {
+  display: inline-block;
+  color: #D3D3D3;
+  margin: 10px;
+}
+
+
+nav > .resume-link {
+  margin: 10px;
+}
+
+.logo {
+  padding: 10px 0;
+  max-width: 70px;
+  justify-self: start;
+  margin-left: 80px;
+}
+
+@media only screen and (max-width: 700px) {
+  .logo {
+    margin-left: 20px;
+  }
+}
+
+/* Intro */
+
+.intro > p {
+  max-width: 600px;
+}
+
+/* Intro end */

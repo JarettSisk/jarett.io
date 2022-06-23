@@ -1,0 +1,12 @@
+.social-links {
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-links > li {
+  margin: 0;
+  padding: 0;
+}

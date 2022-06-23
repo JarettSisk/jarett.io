@@ -1,25 +1,6 @@
 
-.link-hover-effects {
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-.link-hover-effects:hover {
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
-  color: #04F1FE;
-}
-
-.grid {
-  max-width: 100vw;
-  grid-gap: 5px;
-  margin: auto;
-  display: grid;
-  align-items: center;
-  justify-items: center;
-}
-
 .resume-link {
+  justify-self: start;
   font-family: 'Quantico', sans-serif;
   font-size: 1.0rem;
   color: #04F1FE;
@@ -28,6 +9,13 @@
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #04F1FE;
   padding: 10px 18px;
+}
+
+@media  screen and (max-width: 700px) {
+  .resume-link {
+    justify-self: center;
+
+  }
 }
 
 .hr-div {
@@ -39,95 +27,173 @@
   margin: 0;
 }
 
-/* Header */
-.header {
-  margin: 0;
-  padding: 0;
-  border-radius: 5px;
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  justify-items: center;
-  align-items: center;
-  box-shadow: 0 0 10px black;
-}
-/* header needs media queries */
-
-nav {
-  display: block;
-  max-width: 1200px;
-  justify-self: end;
-  margin-right: 80px;
-}
-
-@media only screen and (max-width: 700px) {
-  nav {
-    display: none;
-  }
-}
-
-nav > a {
-  display: inline-block;
-  color: #D3D3D3;
-  margin: 10px;
-}
-
-
-nav > .resume-link {
-  margin: 10px;
-}
-
-.logo {
-  padding: 10px 0;
-  max-width: 70px;
-  justify-self: start;
-  margin-left: 80px;
-}
-
-@media only screen and (max-width: 700px) {
-  .logo {
-    margin-left: 20px;
-  }
-}
-/* Header end */
-
-/* Main */
 
 .main {
-  margin: 100px 80px;
+  margin: 100px 80px 0 80px;
   padding: 0;
   max-width: 1080px;
   display: grid;
-  /* justify-items: center; */
   align-items: center;
+}
+
+section {
+  display: grid;
 }
 
 @media only screen and (max-width: 700px) {
   .main {
     margin: 100px 20px;
   }
+  .main > section > h3 {
+    justify-self: center;
+  }
+
+  .main > section > .hr-div {
+    justify-self: center;
+  }
 }
 
-/* Main end */
 
-/* Intro section */
-.intro-section {
-  /* justify-content: start; */
+/* Intro */
+
+@media only screen and (max-width: 700px) {
+  .intro {
+    text-align: center;
+  }
 }
-.intro-section > p {
+
+.intro > p {
   max-width: 600px;
 }
 
-/* Intro section end */
-
-/* About section */
+/* Intro end */
+/* -------- */
+/* About */
 
 .tech-stack-div {
  display: flex;
 }
 
-.about-section > p {
+.about > p {
   max-width: 600px;
 }
 
-/* About section end */
+/* About end */
+/* -------- */
+/* Exerience */
+
+.projects {
+  display: grid;
+  gap: 10px 50px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+}
+
+@media only screen and (max-width: 900px) {
+  .projects {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.project-card {
+  max-width: 450px;
+  display: flex;
+  min-width: 100px;
+  grid-auto-flow: row;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 7px 30px black;
+  padding: 30px;
+  margin: 30px 0 0 0;
+  text-align: center;
+}
+
+.project-image-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  transition: .3s ease;
+  box-shadow: 0 7px 30px black;
+}
+
+.project-image-container > img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.project-image-overlay {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 40%;
+  transition: .8s ease;
+  background-color: #0c1600;
+}
+
+.project-image-container:hover > a > .project-image-overlay {
+  opacity: 0;
+}
+
+.project-image-container:hover {
+  width: 102%;
+}
+
+.project-links {
+  margin: 30px 0 0 0;
+}
+
+/* Experience end */
+/* -------- */
+/* Contact */
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.faceCard {
+  width: 100%;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0 7px 30px black;
+  margin: 30px 0 0 0;
+}
+.faceCard > * {
+  padding: 20px;
+}
+.faceCard-title {
+  font-size: 3rem;
+}
+.faceCard img {
+  height: 250px;
+}
+.faceCard div {
+  text-align: left;
+  justify-self: start;
+}
+
+@media (max-width: 700px) {
+  .faceCard {
+    gap: 0;
+    grid-template: auto auto /none;
+  }
+  .faceCard div {
+    text-align: center;
+    justify-self: center;
+  }
+
+  .faceCard-title {
+    font-size: 2.2rem;
+  }
+}
+/* Contact end */
