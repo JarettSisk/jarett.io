@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1F1F1F;
+  font-family: 'Quantico', sans-serif;
+  
+}
+
+* {
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 5.5rem;
+  color: #04F1FE;
+  margin: 0;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: #D8F749;
+  margin: 20px 0;
+  line-height: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  display: inline;
+  color: #D8F749;
+  margin-right: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #D3D3D3;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: #04F1FE;
+}
+
+section {
+  margin-bottom: 180px;
+}
+
