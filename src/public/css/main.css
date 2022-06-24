@@ -41,6 +41,10 @@ section {
   margin-bottom: 100px;
 }
 
+.intro {
+  padding-top: 0;
+}
+
 @media only screen and (max-width: 700px) {
   .main {
     padding: 100px 20px;
