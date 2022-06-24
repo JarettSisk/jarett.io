@@ -93,9 +93,7 @@ li {
   color: #04F1FE;
 }
 
-section {
-  margin-bottom: 180px;
-}
+
 
 .link-hover-effects {
   transition: 0.2s ease-in-out;
@@ -106,5 +104,17 @@ section {
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px);
   color: #04F1FE;
+}
+
+/* Scroll animation classes */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
