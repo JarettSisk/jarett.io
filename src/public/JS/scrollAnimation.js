@@ -14,4 +14,6 @@ function reveal() {
   }
 }
 
+reveal();
+
 window.addEventListener("scroll", reveal);
