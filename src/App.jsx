@@ -1,11 +1,10 @@
 import { useEffect } from 'react'
-import { Grid } from './components/grid/grid'
+import { Grid } from './components/Grid/Grid'
 import { Header } from './components/Header/Header'
 import { Main } from './components/Main/Main'
 import './App.css'
 
 function App() {
-  console.log("foo!")
 
   useEffect(() => {
     function reveal() {
