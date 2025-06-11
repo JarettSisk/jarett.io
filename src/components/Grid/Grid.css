@@ -1,0 +1,8 @@
+.grid {
+  max-width: 100vw;
+  grid-gap: 5px;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
