@@ -13,7 +13,7 @@ export const Main = (props) => {
                 <h1>Jarett Sisk.</h1>
                 <h2>I create things using code.</h2>
                 <p>I started coding as a hobby back in 2015, and what started as a hobby soon became a passion. Over the years I spent alot of time self-learning and in 2021 finally had the opportunity to join a coding bootcamp and graduated in 2022. Currently, I am a full-time software engineer with a focus on web development.</p>
-                <a href="https://resume.https://drive.google.com/file/d/1ryorjbhBvMC2kf73WQ1DZaBUbZk9MLIm/view?usp=sharing.io/resume/gw9zlq307t2">
+                <a href="https://drive.google.com/file/d/1ryorjbhBvMC2kf73WQ1DZaBUbZk9MLIm/view?usp=sharing">
                 <button className="resume-link link-hover-effects">View my resume</button>
                 </a>
             </section>
