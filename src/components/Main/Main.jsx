@@ -28,17 +28,19 @@ export const Main = (props) => {
         
                 <p>Some of my other hobbies include Electronic Music Production, Gaming ocasionally, and spending quality time with friends and family.</p>
         
-                <p>Here are a few of the technologies I have been working with recently.</p>
+                <p>Here are a some of the technologies I have been working with recently.</p>
                 <div className="tech-stack-div">
                     <ul>
                     <li>JavaScript</li>
                     <li>Node.js</li>
                     <li>Express.js</li>
+                    <li>Webhooks</li>
                     </ul>
                     <ul>
                     <li>React.js</li>
                     <li>MySQL</li>
                     <li>Sequelize ORM</li>
+                    <li>REST</li>
                     </ul>
                 </div>
                 </div>
@@ -46,66 +48,66 @@ export const Main = (props) => {
 
             <section className="experience" id="experience">
                 <div className="reveal-container reveal">
-                <h3>2. My Experience</h3>
-                <div className="hr-div"></div>
-                <div className="projects">
-                    <div className="project-card">
-                    <h4>360-photo</h4>
-                    <p>View 360 photos in your browser</p>
-                        <div className="project-image-container">
-                        <img src="./images/360-photo.png" alt="360 photo project" />
-                        <a href="https://three60-photo.onrender.com/photo">
-                        <div className="project-image-overlay"></div>
-                        </a>
+                    <h3>2. My Experience</h3>
+                    <div className="hr-div"></div>
+                    <div className="projects">
+                        <div className="project-card">
+                            <h4>React Grid</h4>
+                            <p>Simple layouts for all</p>
+                            <div className="project-image-container">
+                                <img src="./images/light-weight-react-grid.png" alt="React Grid Layout" />
+                                <a href="https://jarettsisk.github.io/lightweight-react-grid-layout/">
+                                    <div className="project-image-overlay"></div>
+                                </a>
+                            </div>
+                            <div className="project-links">
+                                <a href="https://jarettsisk.github.io/lightweight-react-grid-layout/" ><i className="uil uil-link-alt link-hover-effects"></i></a>
+                                <a href="https://github.com/JarettSisk/lightweight-react-grid-layout" ><i className="uil uil-github link-hover-effects link-hover-effects"></i></a>
+                            </div>
                         </div>
-                    <div className="project-links">
-                        <a href="https://three60-photo.onrender.com/photo" ><i className="uil uil-link-alt link-hover-effects"></i></a>
-                        <a href="https://github.com/JarettSisk/360-photo-app" ><i className="uil uil-github link-hover-effects link-hover-effects"></i></a>
-                    </div>
-                    </div>
-                    <div className="project-card">
-                    <h4>Sprinboard Dark Theme</h4>
-                    <p>A dark theme for my bootcamp's website</p>
-                        <div className="project-image-container">
-                        <img src="./images/springboard-dark-theme.png" alt="Springboard dark theme project" />
-                        <a href="https://chrome.google.com/webstore/detail/springboard-dark-theme-be/momeonbdhfiamhnpjmgdmnkommfdlfhh">
-                            <div className="project-image-overlay"></div>
-                        </a>
+                        <div className="project-card">
+                            <h4>Sprinboard Dark Theme</h4>
+                            <p>A dark theme for my bootcamp's website</p>
+                            <div className="project-image-container">
+                                <img src="./images/springboard-dark-theme.png" alt="Springboard dark theme project" />
+                                <a href="https://chrome.google.com/webstore/detail/springboard-dark-theme-be/momeonbdhfiamhnpjmgdmnkommfdlfhh">
+                                    <div className="project-image-overlay"></div>
+                                </a>
+                            </div>
+                            <div className="project-links">
+                                <a href="https://chrome.google.com/webstore/detail/springboard-dark-theme-be/momeonbdhfiamhnpjmgdmnkommfdlfhh" ><i className="uil uil-link-alt link-hover-effects"></i></a>
+                                <a href="https://github.com/JarettSisk/Springboard-dark-theme-chrome-extension" ><i className="uil uil-github link-hover-effects link-hover-effects"></i></a>
+                            </div>
                         </div>
-                    <div className="project-links">
-                        <a href="https://chrome.google.com/webstore/detail/springboard-dark-theme-be/momeonbdhfiamhnpjmgdmnkommfdlfhh" ><i className="uil uil-link-alt link-hover-effects"></i></a>
-                        <a href="https://github.com/JarettSisk/Springboard-dark-theme-chrome-extension" ><i className="uil uil-github link-hover-effects link-hover-effects"></i></a>
-                    </div>
-                    </div>
-                    <div className="project-card">
-                    <h4>Hangman</h4>
-                    <p>A fun hangman game for the web</p>
-                        <div className="project-image-container">
-                        <img src="./images/hangman.png" alt="360 photo project" />
-                        <a href="https://zealous-bassi-e07d0d.netlify.app/">
-                            <div className="project-image-overlay"></div>
-                        </a>
+                        <div className="project-card">
+                            <h4>360-photo</h4>
+                            <p>View 360 photos in your browser</p>
+                            <div className="project-image-container">
+                                <img src="./images/360-photo.png" alt="360 photo project" />
+                                <a href="https://three60-photo.onrender.com/photo">
+                                    <div className="project-image-overlay"></div>
+                                </a>
+                            </div>
+                            <div className="project-links">
+                                <a href="https://three60-photo.onrender.com/photo" ><i className="uil uil-link-alt link-hover-effects"></i></a>
+                                <a href="https://github.com/JarettSisk/360-photo-app" ><i className="uil uil-github link-hover-effects link-hover-effects"></i></a>
+                            </div>
                         </div>
-                    <div className="project-links">
-                        <a href="https://zealous-bassi-e07d0d.netlify.app/" ><i className="uil uil-link-alt link-hover-effects"></i></a>
-                        <a href="https://github.com/JarettSisk/hangman-game" ><i className="uil uil-github link-hover-effects link-hover-effects"></i></a>
-                    </div>
-                    </div>
-                    <div className="project-card">
-                    <h4>Playlister</h4>
-                    <p>Create and share playlists for your event</p>
-                        <div className="project-image-container">
-                        <img src="./images/playlister.png" alt="360 photo project" />
-                        <a href="https://jarett-sisk-playlister-app.herokuapp.com/">
-                            <div className="project-image-overlay"></div>
-                        </a>
+                        <div className="project-card">
+                            <h4>Hangman</h4>
+                            <p>A fun hangman game for the web</p>
+                            <div className="project-image-container">
+                                <img src="./images/hangman.png" alt="360 photo project" />
+                                <a href="https://zealous-bassi-e07d0d.netlify.app/">
+                                    <div className="project-image-overlay"></div>
+                                </a>
+                            </div>
+                            <div className="project-links">
+                                <a href="https://zealous-bassi-e07d0d.netlify.app/" ><i className="uil uil-link-alt link-hover-effects"></i></a>
+                                <a href="https://github.com/JarettSisk/hangman-game" ><i className="uil uil-github link-hover-effects link-hover-effects"></i></a>
+                            </div>
                         </div>
-                    <div className="project-links">
-                        <a href="https://jarett-sisk-playlister-app.herokuapp.com/" ><i className="uil uil-link-alt link-hover-effects"></i></a>
-                        <a href="https://github.com/JarettSisk/Playlister" ><i className="uil uil-github link-hover-effects link-hover-effects"></i></a>
                     </div>
-                    </div>
-                </div>
                 </div>
             </section>
 
