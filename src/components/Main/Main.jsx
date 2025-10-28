@@ -125,7 +125,7 @@ export const Main = (props) => {
                 <h3>3. Contact Information</h3>
                 <div className="hr-div"></div>
                 <div className="faceCard">
-                    <img src="./images/jarett-photo.png" />
+                    <img src="./images/prof-photo.png" alt="Portrait photo of Jarett Sisk"/>
                     <div style={{padding: 0}}>
                     <h2 className="faceCard-title" style={{margin: 0}}>Jarett Sisk</h2>
                     <p>816-269-4911.</p>
