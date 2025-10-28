@@ -21,28 +21,37 @@ export const Main = (props) => {
             <section className="about" id="about">
                 <div className="reveal-container reveal">
                 <h3>1. About Me</h3>
-                <div className="hr-div"></div>
-                <p>Hi! my name is Jarett. I am a software engineer with a focus on web developement. Growing up I always had a deep fascination with technology, and enjoyed all things electronic. After working heavy labor for most of my life, I always knew that I wanted something different when it came to a career. So back in 2015 I started learning to code. </p>
-        
-                <p>Fast forward to today, and I have dabbled in everything from creating games with unity and c#, to building full-stack apps for the web using JavaScript, Node.js and more. </p>
-        
-                <p>Some of my other hobbies include Electronic Music Production, Gaming ocasionally, and spending quality time with friends and family.</p>
-        
-                <p>Here are a some of the technologies I have been working with recently.</p>
-                <div className="tech-stack-div">
-                    <ul>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>Webhooks</li>
-                    </ul>
-                    <ul>
-                    <li>React.js</li>
-                    <li>MySQL</li>
-                    <li>Sequelize ORM</li>
-                    <li>REST</li>
-                    </ul>
-                </div>
+                    <div className="hr-div"></div>
+                    <p>Hi! my name is Jarett. I am a software engineer with a focus on web developement. Growing up I always had a deep fascination with technology, and enjoyed all things electronic. After working heavy labor for most of my life, I always knew that I wanted something different when it came to a career. So back in 2015 I started learning to code. </p>
+            
+                    <p>Fast forward to today, and I have dabbled in everything from creating games with unity and c#, to building full-stack apps for the web using JavaScript, Node.js and more. </p>
+            
+                    <p>Some of my other hobbies include Electronic Music Production, Gaming ocasionally, and spending quality time with friends and family.</p>
+            
+                    <p>Here are a some of the technologies I have been working with recently.</p>
+                    <div className="tech-stack-div">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Webhooks</li>
+                        </ul>
+                        <ul>
+                            <li>React.js</li>
+                            <li>MySQL</li>
+                            <li>Sequelize ORM</li>
+                            <li>REST</li>
+                        </ul>
+                    </div>
+                    <p>And below are technologies that are on my learning road map.</p>
+                    <div className="tech-stack-div">
+                        <ul>
+                            <li>Typescript</li>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>File servers and CDNs</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
