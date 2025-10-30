@@ -75,7 +75,7 @@ export const Main = (props) => {
                             </div>
                         </div>
                         <div className="project-card">
-                            <h4>Sprinboard Dark Theme</h4>
+                            <h4>Springboard Dark Theme</h4>
                             <p>A dark theme for my bootcamp's website</p>
                             <div className="project-image-container">
                                 <img src="./images/springboard-dark-theme.png" alt="Springboard dark theme project" />
