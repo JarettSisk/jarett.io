@@ -17,7 +17,7 @@ export const Header = (props) => {
                 <a href="#about" className="nav-link link-hover-effects">1. About</a>
                 <a href="#experience" className="nav-link link-hover-effects">2. Experience</a>
                 <a href="#contact" className="nav-link link-hover-effects">3. Contact</a>
-                <a href="https://drive.google.com/file/d/1ryorjbhBvMC2kf73WQ1DZaBUbZk9MLIm/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1uvup__Z1SZdeKtNafnB3DgXL07_jp7MH/view?usp=sharing">
                 <button className="resume-link link-hover-effects">Resume</button>
                 </a>
             </nav>
